@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">AboutMe</string>
+    <string name="name">Ameya Joshi</string>
+    <string name="yellow_start">Yellow</string>
+    <string name="bio">“Hi I am Ameya , i love butter chicken , pao bhaji , wada paav.\n
+        You are the shuckiest shuck faced shuck in the world!
+        I\'m unpredictable,
+        I never know where I\'m going until I get there, I\'m so random, I\'m always growing, learning, changing,
+        I\'m never the same person twice.
+        But one thing you can be sure of about me; is I will always do exactly what I want to do.”
+       “But that was life: Nobody got a guided tour to their own theme park.
+        You had to hop on the rides as they presented themselves, never knowing whether you would like the one you were in line
+        for...or if the bastard was going to make you throw up your corn dog and your cotton candy all over the place.”
+       “A musician must make music, an artist must paint, a poet must write, if he is to be ultimately at peace with himself.
+        What a man can be, he must be”.
+        “What have I become?
+        My sweetest friend;
+        everyone I know goes away in the end.
+        And you could have it all:
+        my empire of dirt.
+        I will let you down.
+        I will make you hurt.”
+       </string>
+    <string name="nick_name_hint">What is your nickname ?</string>
+</resources>
