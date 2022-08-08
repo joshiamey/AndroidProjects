@@ -3,15 +3,18 @@ package com.example.diceroller
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
+    lateinit var diceImgView: ImageView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+        diceImgView = findViewById(R.id.dice_image)
         val rollButton: Button = findViewById(R.id.roll_button)
 
         rollButton.setOnClickListener {
@@ -21,15 +24,16 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun rollDice() {
-        val buttonToast: Toast = Toast.makeText(this, "Roll Button Clicked!",
-            Toast.LENGTH_LONG)
-        buttonToast.show()
 
-        val resultTxt: TextView = findViewById(R.id.result_text)
+        val drawableResource = when (Random.nextInt(6) + 1) {
+            1 -> R.drawable.dice_1
+            2 -> R.drawable.dice_2
+            3 -> R.drawable.dice_3
+            4 -> R.drawable.dice_4
+            5 -> R.drawable.dice_5
+            else -> R.drawable.dice_6
+        }
 
-        val randomInt = Random.nextInt(6) + 1
-
-        resultTxt.text = randomInt.toString()
-
+        diceImgView.setImageResource(drawableResource)
     }
 }
